@@ -1,8 +1,10 @@
 {
   "name": "demo-build",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
+    "antd": "^2.10.1",
+    "babel-plugin-import": "^1.1.1",
+    "babel-preset-react-app": "^2.2.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
@@ -78,6 +80,15 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "style": "css"
+        }
+      ]
     ]
   },
   "eslintConfig": {
